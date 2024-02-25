@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+   
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <header class="jumbotron text-center">
+        <h1>Welcome to My Blog</h1>
+        <p>A place to share and explore ideas</p>
+    </header>
+
+  
+    <main class="container">
+        <div class="row">
+        
+            <div class="col-md-6 mb-4">
+                <h2>Create New Blog Post</h2>
+                <form action="/blognames" method="POST">
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="title" name="title" required><br>
+                    
+                    <label for="content">Content:</label><br>
+                    <textarea id="content" name="content" rows="4" cols="50" required></textarea><br>
+                    
+                    <label for="author">Author:</label><br>
+                    <input type="text" id="author" name="author" required><br>
+                    
+                    <label for="createdAt">Created At:</label><br>
+                    <input type="datetime-local" id="createdAt" name="createdAt" required><br>
+
+                    <br><button type="submit">Submit</button>
+                </form>
+            </div>
+
+           
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://media.licdn.com/dms/image/C5622AQH7vzV5aFxnAQ/feedshare-shrink_800/0/1677698736997?e=2147483647&v=beta&t=eikRaemWKRWC3Q4B06TIZYNqmZ3_FykTwfm8zJer6Wc" alt="Blog Post Image">
+                    <div class="card-body">
+                       
+                        <h2 class="card-title">My New Blog</h2>
+                        <p class="card-text">Hello! I am Satvik Pandey working on the task-2 of my internship at Bharat Intern, where i will be working on making simple Blog webpage using MERN.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </main>
+
+   
+    <footer class="footer bg-dark text-light text-center py-3">
+        <div class="container">
+            <span>&copy; 2024 My Blog. All rights reserved.</span>
+        </div>
+    </footer>
+
+   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
